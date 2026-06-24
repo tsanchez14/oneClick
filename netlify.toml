@@ -1,0 +1,3 @@
+[build]
+  command = "pnpm --filter @onclick/landing run build"
+  publish = "apps/landing/dist"
