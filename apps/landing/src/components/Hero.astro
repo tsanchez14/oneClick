@@ -1,0 +1,79 @@
+---
+// Hero.astro
+---
+<section class="relative pt-24 pb-32 overflow-hidden">
+  <!-- Animated Gradient Background -->
+  <div class="absolute inset-0 -z-10 bg-gradient-to-br from-[#0f1729] via-[#2563eb] to-[#8b5cf6] animate-gradient-x opacity-10"></div>
+  <div class="absolute inset-0 -z-10 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
+
+  <div class="container mx-auto px-4 text-center max-w-4xl">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-sm font-medium mb-8">
+      <span class="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
+      Nuevo sistema de reservas
+    </div>
+    
+    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-[#0f1729] mb-6 leading-tight">
+      Tu agenda profesional, <br class="hidden md:block"/>
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#2563eb] to-[#8b5cf6]">en un click.</span>
+    </h1>
+    
+    <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+      Gestioná turnos, profesionales y servicios desde un solo lugar. Tus clientes reservan solos, 24/7.
+    </p>
+    
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
+      <a href="http://localhost:5173/register" class="w-full sm:w-auto text-lg font-semibold text-white bg-[#2563eb] hover:bg-[#1d4ed8] px-8 py-4 rounded-xl shadow-lg shadow-blue-500/30 transition-all hover:-translate-y-1">
+        Probar 14 días gratis
+      </a>
+      <a href="http://localhost:5173/demo/dashboard" class="w-full sm:w-auto text-lg font-semibold text-[#0f1729] border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 px-8 py-4 rounded-xl transition-all">
+        Ver demo interactiva
+      </a>
+    </div>
+
+    <!-- Dashboard Mockup -->
+    <div class="relative mx-auto w-full max-w-5xl">
+      <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#2563eb] to-[#8b5cf6] opacity-30 blur-xl"></div>
+      <div class="relative rounded-2xl border border-gray-200 bg-white/90 backdrop-blur shadow-2xl overflow-hidden flex flex-col h-[400px] md:h-[600px] text-left">
+        <!-- Mockup Header -->
+        <div class="h-12 border-b border-gray-100 flex items-center px-4 gap-2 bg-gray-50/50">
+          <div class="flex gap-1.5">
+            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+            <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+            <div class="w-3 h-3 rounded-full bg-green-400"></div>
+          </div>
+          <div class="mx-auto bg-white border border-gray-200 rounded-md px-32 py-1 text-xs text-gray-400 font-medium">app.onclick.com</div>
+        </div>
+        <!-- Mockup Body -->
+        <div class="flex flex-1">
+          <!-- Sidebar -->
+          <div class="w-48 border-r border-gray-100 bg-gray-50/30 p-4 hidden md:flex flex-col gap-2">
+            <div class="h-8 bg-gray-200 rounded w-3/4 mb-4"></div>
+            <div class="h-8 bg-blue-100 rounded w-full"></div>
+            <div class="h-8 bg-gray-100 rounded w-full"></div>
+            <div class="h-8 bg-gray-100 rounded w-full"></div>
+          </div>
+          <!-- Content -->
+          <div class="flex-1 p-6 md:p-8 flex flex-col gap-6">
+            <div class="flex justify-between items-center">
+              <div class="h-8 bg-gray-200 rounded w-1/4"></div>
+              <div class="h-8 bg-[#2563eb] rounded w-32"></div>
+            </div>
+            <div class="grid grid-cols-3 gap-4">
+              <div class="h-24 bg-gray-50 border border-gray-100 rounded-xl"></div>
+              <div class="h-24 bg-gray-50 border border-gray-100 rounded-xl"></div>
+              <div class="h-24 bg-gray-50 border border-gray-100 rounded-xl"></div>
+            </div>
+            <div class="flex-1 bg-white border border-gray-100 rounded-xl shadow-sm">
+              <div class="h-12 border-b border-gray-50 flex items-center px-4"><div class="h-4 bg-gray-200 rounded w-1/6"></div></div>
+              <div class="p-4 space-y-3">
+                <div class="h-12 bg-blue-50/50 rounded-lg"></div>
+                <div class="h-12 bg-gray-50 rounded-lg"></div>
+                <div class="h-12 bg-gray-50 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

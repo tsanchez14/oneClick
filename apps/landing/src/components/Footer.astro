@@ -1,0 +1,56 @@
+---
+// Footer.astro
+---
+<footer class="bg-white border-t border-gray-100 pt-16 pb-8">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 mb-12">
+      <div class="flex flex-col items-center md:items-start gap-4">
+        <a href="/" class="flex items-center gap-2">
+          <div class="bg-[#0f1729] text-white p-1.5 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+              <line x1="16" x2="16" y1="2" y2="6"/>
+              <line x1="8" x2="8" y1="2" y2="6"/>
+              <line x1="3" x2="21" y1="10" y2="10"/>
+              <path d="m9 16 2 2 4-4"/>
+            </svg>
+          </div>
+          <span class="text-xl font-bold tracking-tight text-[#0f1729]">onClick</span>
+        </a>
+        <p class="text-sm text-gray-500 text-center md:text-left max-w-xs">
+          La forma más simple e inteligente de gestionar reservas para tu negocio.
+        </p>
+      </div>
+      
+      <div class="flex gap-8 md:gap-16">
+        <div class="flex flex-col gap-3">
+          <h4 class="font-semibold text-[#0f1729]">Producto</h4>
+          <a href="#funcionalidades" class="text-sm text-gray-500 hover:text-[#2563eb]">Funcionalidades</a>
+          <a href="#precios" class="text-sm text-gray-500 hover:text-[#2563eb]">Precios</a>
+          <a href="#faqs" class="text-sm text-gray-500 hover:text-[#2563eb]">Preguntas frecuentes</a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h4 class="font-semibold text-[#0f1729]">Legal</h4>
+          <a href="/terminos" class="text-sm text-gray-500 hover:text-[#2563eb]">Términos y condiciones</a>
+          <a href="/privacidad" class="text-sm text-gray-500 hover:text-[#2563eb]">Política de privacidad</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-sm text-gray-400">
+        © 2025 onClick — Hecho con ❤️ en Argentina.
+      </p>
+      <div class="flex gap-4">
+        <a href="#" class="text-gray-400 hover:text-[#0f1729] transition-colors">
+          <span class="sr-only">Instagram</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-[#0f1729] transition-colors">
+          <span class="sr-only">LinkedIn</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

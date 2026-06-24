@@ -1,0 +1,20 @@
+name = "onclick-worker"
+main = "src/index.ts"
+compatibility_date = "2024-03-20"
+
+# Cron Triggers
+# Job 1: 0 0 * * * (Diario a las 00:00 UTC) - Suspender trials
+# Job 2: */15 * * * * (Cada 15 min) - Recordatorios WhatsApp
+# Job 3: 0 8 * * * (Diario a las 08:00 UTC) - Alerta pagos vencidos
+[triggers]
+crons = ["0 0 * * *", "*/15 * * * *", "0 8 * * *"]
+
+# Las siguientes variables de entorno deben configurarse como secretos usando:
+# npx wrangler secret put <NOMBRE_VARIABLE>
+# 
+# Variables requeridas:
+# SUPABASE_URL
+# SUPABASE_SERVICE_ROLE_KEY
+# MP_WEBHOOK_SECRET
+# WHATSAPP_TOKEN
+# WHATSAPP_PHONE_ID

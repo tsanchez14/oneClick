@@ -1,0 +1,112 @@
+---
+// Pricing.astro
+---
+<section id="precios" class="py-24 bg-gray-50 border-t border-gray-100">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-[#0f1729] mb-4">Planes simples y transparentes</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Elegí el plan que mejor se adapte al tamaño de tu negocio. Sin costos ocultos ni comisiones por turno.</p>
+    </div>
+
+    <div class="flex flex-col lg:flex-row items-stretch justify-center gap-8 max-w-5xl mx-auto">
+      
+      <!-- Base Plan -->
+      <div class="flex-1 bg-white border border-gray-200 rounded-3xl p-8 shadow-sm flex flex-col">
+        <h3 class="text-xl font-bold text-[#0f1729] mb-2">Base</h3>
+        <p class="text-sm text-gray-500 mb-6">Ideal para profesionales independientes.</p>
+        <div class="mb-6">
+          <div class="flex items-end gap-2">
+            <span class="text-4xl font-extrabold text-[#0f1729]">$9.000</span>
+            <span class="text-gray-500 mb-1">/mes</span>
+          </div>
+          <span class="text-sm text-gray-400 line-through">Precio regular: $12.000</span>
+        </div>
+        <ul class="space-y-4 mb-8 flex-1">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-600">1 profesional</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-600">Turnos ilimitados</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-600">Servicios ilimitados</span>
+          </li>
+        </ul>
+        <a href="http://localhost:5173/register?plan=base" class="w-full block text-center font-semibold text-[#0f1729] bg-gray-50 border border-gray-200 hover:bg-gray-100 py-3 rounded-xl transition-colors">
+          Empezar ahora
+        </a>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="flex-1 bg-white border-2 border-[#2563eb] rounded-3xl p-8 shadow-xl relative flex flex-col transform lg:-translate-y-4">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#2563eb] text-white text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full">
+          Más elegido
+        </div>
+        <h3 class="text-xl font-bold text-[#0f1729] mb-2">Pro</h3>
+        <p class="text-sm text-gray-500 mb-6">Para centros de estética o salones pequeños.</p>
+        <div class="mb-6">
+          <div class="flex items-end gap-2">
+            <span class="text-4xl font-extrabold text-[#2563eb]">$22.000</span>
+            <span class="text-gray-500 mb-1">/mes</span>
+          </div>
+          <span class="text-sm text-gray-400 line-through">Precio regular: $25.000</span>
+        </div>
+        <ul class="space-y-4 mb-8 flex-1">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-[#2563eb] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-600 font-medium">Hasta 5 profesionales</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-[#2563eb] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-600">Turnos ilimitados</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-[#2563eb] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-600">Recordatorios por WhatsApp</span>
+          </li>
+        </ul>
+        <a href="http://localhost:5173/register?plan=pro" class="w-full block text-center font-semibold text-white bg-[#2563eb] hover:bg-[#1d4ed8] py-3 rounded-xl transition-all shadow-md shadow-blue-500/20">
+          Probar 14 días gratis
+        </a>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="flex-1 bg-white border border-gray-200 rounded-3xl p-8 shadow-sm flex flex-col">
+        <h3 class="text-xl font-bold text-[#0f1729] mb-2">Premium</h3>
+        <p class="text-sm text-gray-500 mb-6">Para clínicas y grandes establecimientos.</p>
+        <div class="mb-6">
+          <div class="flex items-end gap-2">
+            <span class="text-4xl font-extrabold text-[#0f1729]">$40.000</span>
+            <span class="text-gray-500 mb-1">/mes</span>
+          </div>
+          <span class="text-sm text-gray-400 line-through">Precio regular: $43.000</span>
+        </div>
+        <ul class="space-y-4 mb-8 flex-1">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-600 font-medium">Profesionales ilimitados</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-600">Turnos ilimitados</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-600">Reportes avanzados</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-600">Soporte prioritario</span>
+          </li>
+        </ul>
+        <a href="http://localhost:5173/register?plan=premium" class="w-full block text-center font-semibold text-[#0f1729] bg-gray-50 border border-gray-200 hover:bg-gray-100 py-3 rounded-xl transition-colors">
+          Contactar ventas
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>

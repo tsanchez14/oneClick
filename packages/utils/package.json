@@ -1,0 +1,10 @@
+{
+  "name": "@onclick/utils",
+  "private": true,
+  "version": "1.0.0",
+  "main": "./src/supabase.ts",
+  "types": "./src/supabase.ts",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4"
+  }
+}
