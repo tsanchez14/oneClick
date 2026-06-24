@@ -43,7 +43,7 @@ export default function ProfesionalesPage() {
   const [editTarget, setEditTarget] = useState<ProfessionalWithUser | null>(null);
   const [deleteTarget, setDeleteTarget] = useState<ProfessionalWithUser | null>(null);
 
-  const { getProfessionals, getSubscription, updateProfessional, deleteProfessional, createInvitation } = useData();
+  const { getProfessionals, getSubscription, updateProfessional, deleteProfessional } = useData();
 
   const fetchData = async () => {
     if (!tenantId) return;

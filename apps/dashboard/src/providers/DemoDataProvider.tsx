@@ -74,6 +74,7 @@ export function DemoDataProvider({ children }: { children: React.ReactNode }) {
     },
 
     async getAppointments(tenantId, start, end) {
+      void tenantId;
       return appointments
         .filter(a => a.starts_at >= start && a.starts_at <= end)
         .map(a => ({
@@ -84,6 +85,7 @@ export function DemoDataProvider({ children }: { children: React.ReactNode }) {
         }));
     },
     async getAppointmentsForProfessional(tenantId, professionalId, start, end) {
+      void tenantId;
       return appointments.filter(a => a.professional_id === professionalId && ['confirmed', 'blocked'].includes(a.status) && a.starts_at >= start && a.starts_at <= end);
     },
     async createAppointment(appt) {
@@ -115,9 +117,11 @@ export function DemoDataProvider({ children }: { children: React.ReactNode }) {
     },
 
     async getTimeBlocks(tenantId, start, end) {
+      void tenantId;
       return timeBlocks.filter(b => b.starts_at >= start && b.starts_at <= end);
     },
     async getTimeBlocksForProfessional(tenantId, professionalId, start, end) {
+      void tenantId;
       return timeBlocks.filter(b => b.professional_id === professionalId && b.starts_at >= start && b.starts_at <= end);
     },
     async createTimeBlock(block) {
@@ -134,9 +138,11 @@ export function DemoDataProvider({ children }: { children: React.ReactNode }) {
       return [...clients].sort((a, b) => a.full_name.localeCompare(b.full_name));
     },
     async getClientByPhone(tenantId, phone) {
+      void tenantId;
       return clients.find(c => c.phone === phone) || null;
     },
     async searchClients(tenantId, query) {
+      void tenantId;
       const q = query.toLowerCase();
       return clients.filter(c => c.full_name.toLowerCase().includes(q) || c.phone.includes(q)).slice(0, 8);
     },
